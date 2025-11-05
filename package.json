@@ -2,7 +2,7 @@
   "name": "murastore",
   "private": true,
   "scripts": {
-    "start": "node backend/server.js",
+    "start": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
     "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\""
   },
   "dependencies": {
