@@ -163,8 +163,6 @@ app.post('/create-checkout', async (req,res)=>{
   res.json({ url: session.url });
 });
 
-const path = require('path');
-
 app.use(express.static(path.join(process.cwd(), '../frontend/dist')));
 
 app.get('*', (req, res) => {
