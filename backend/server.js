@@ -163,4 +163,12 @@ app.post('/create-checkout', async (req,res)=>{
   res.json({ url: session.url });
 });
 
+const path = require('path');
+
+app.use(express.static(path.join(process.cwd(), '../frontend/dist')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(process.cwd(), '../frontend/dist/index.html'));
+});
+
 app.listen(PORT, ()=>console.log('Server running on', PORT));
