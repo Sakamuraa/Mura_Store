@@ -1,1 +1,1 @@
-web: npm run dev
+web: concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"
