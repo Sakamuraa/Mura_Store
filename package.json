@@ -6,6 +6,7 @@
     "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\""
   },
   "dependencies": {
+    "concurrently": "^9.2.1",
     "express": "^4.18.2",
     "mongoose": "^7.0.0",
     "cors": "^2.8.5",
@@ -19,7 +20,6 @@
     "react-router-dom": "^6.4.0"
   },
   "devDependencies": {
-    "concurrently": "^9.2.1",
     "vite": "^5.0.0"
   }
 }
