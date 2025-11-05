@@ -1,6 +1,7 @@
-Lynk-style personal shop - ready
-Folders: frontend/, backend/
+# Mura Store
+##Source Code
 
+### Instruction
 Backend:
   cd backend
   npm install
