@@ -1,7 +1,6 @@
-# Mura Store
-##Source Code
+MURA STORE
 
-### Instruction
+Instruction
 Backend:
   cd backend
   npm install
