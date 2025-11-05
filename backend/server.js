@@ -14,8 +14,8 @@ dotenv.config();
 const app = express();
 app.use(cors());
 app.use(express.json());
-// const upload = multer({ dest: 'uploads/' });
-const storage = multer.diskStorage({
+const upload = multer({ dest: 'uploads/' });
+/* const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, path.join(process.cwd(), 'uploads'));
   },
@@ -26,7 +26,7 @@ const storage = multer.diskStorage({
   }
 });
 
-const upload = multer({ storage });
+const upload = multer({ storage }); */
 
 
 const PORT = process.env.PORT || 4242;
